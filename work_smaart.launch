@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="work_smaart" type="Cerebro.py" name="cerebro" output="screen">
+        <!-- <remap from="/* old_topic_name */" to="/* new_topic_name */"/> -->
+        <param name="verbose" value="true" type="bool"/>
+    </node>
+
+    <node pkg="work_smaart" type="Battery" name="battery" output="screen">
+        <!-- <remap from="/* old_topic_name */" to="/* new_topic_name */"/> -->
+        
+    </node>
+
+    <node pkg="work_smaart" type="Camera.py" name="camera" output="screen">
+        <!-- <remap from="/* old_topic_name */" to="/* new_topic_name */"/> -->
+        <param name="verbose" value='true' type="bool"/>
+    </node>
+
+</launch>

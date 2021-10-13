@@ -1,0 +1,8 @@
+#define the goal
+geometry_msgs/Point EndOfBoard
+---
+#define the result
+uint32 GoBaseOrFinalGoal
+---
+#define a feedback message
+uint32 NextMoveDirection # 0=N (norte), 1=E (leste), 2=S (sul), 3=W (oeste)
