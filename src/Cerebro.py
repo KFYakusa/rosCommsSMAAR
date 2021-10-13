@@ -41,6 +41,9 @@ class Cerebro():
             return  resposta.isWeak
         except rospy.ServiceException as e:
             print("service call failed:  %s" %e)
+
+
+    
             
     def histogramComparator(self,imgTest):
         imgBase = self.img
